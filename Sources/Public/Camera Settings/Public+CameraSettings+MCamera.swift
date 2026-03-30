@@ -12,15 +12,6 @@
 import SwiftUI
 import AVKit
 
-// MARK: Initializer
-public extension MCamera {
-    init() { self.init(manager: .init(
-        captureSession: AVCaptureSession(),
-        captureDeviceInputType: AVCaptureDeviceInput.self
-    ))}
-}
-
-
 // MARK: - METHODS
 
 

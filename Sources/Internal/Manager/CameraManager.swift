@@ -41,6 +41,14 @@ import AVKit
         self.frontCameraInput = CDI.get(mediaType: .video, position: .front)
         self.backCameraInput = CDI.get(mediaType: .video, position: .back)
     }
+
+    public convenience override init() {
+        self.init(
+            captureSession: AVCaptureSession(),
+            captureDeviceInputType: AVCaptureDeviceInput.self
+        )
+    }
+
 }
 
 // MARK: Initialize
